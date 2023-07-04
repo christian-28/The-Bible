@@ -250,6 +250,7 @@ aside div a {
 }
 
 aside div a:hover {
+ transition: 0.2s;
  background-color: #264653;
  color: #fff;
 }
