@@ -250,7 +250,6 @@ aside div a {
 }
 
 aside div a:hover {
- transition: 0.2s;
  background-color: #264653;
  color: #fff;
 }
@@ -265,19 +264,50 @@ aside div a:hover {
 
 main {
  background-color: #ededed;
- box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
  width: 70%;
  border-radius: 20px;
  padding: 40px;
  margin: auto;
 }
 
+main h1 {
+ margin-bottom: 1px;
+}
+
+main span{
+ margin-left: 10px;
+}
+
 main p {
+ margin-top: 30px;
  line-height: 2.5;
+ font-size: 15px;
  color: #333;
 }
 
 main sup {
  font-weight: 700;
  color: maroon;
+}
+
+.pager {
+ display: flex;
+ justify-content: space-between;
+}
+
+.pager a{
+ background-color: #356274;
+ margin-bottom: 20px;
+ text-align: center;
+ width: 10%;
+ color: #fff;
+ border: none;
+ border-radius: 3px;
+ padding: 10px 10px;
+ text-decoration: none;
+}
+
+.pager a:hover {
+ background-color: #324752;
 }
