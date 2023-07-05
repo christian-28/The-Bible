@@ -28,7 +28,7 @@ function topFunction() {
 }
 
 
-/*DARK MODE SCRIPT*/
+/* DARK MODE SCRIPT */
 // Get the switch input element
 var switchInput = document.querySelector('.ui-switch input');
 
@@ -48,7 +48,18 @@ switchInput.addEventListener('change', function() {
     // Store the mode in local storage
     localStorage.setItem('mode', 'light');
   }
+  
+  // Apply a transition effect to the body
+  document.body.style.transition = 'background-color 0.3s ease-in-out';
 });
+
+// Restore the mode from local storage on page load
+var savedMode = localStorage.getItem('mode');
+if (savedMode === 'dark') {
+  switchInput.checked = true;
+  document.body.classList.add('dark-mode');
+}
+
 
 // Check the stored mode in local storage on page load
 window.addEventListener('load', function() {
