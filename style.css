@@ -229,6 +229,16 @@ footer {
   font-size: 13px;
  }
 
+  .kjv-headline a {
+   font-size: 12px;
+   padding: 10px 30px;
+   border-radius: 10px;
+  }
+
+  .kjv-headline h1 {
+   font-size: 20px;
+  }
+
 }
 
 .old-testament,
