@@ -5,7 +5,6 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="read.css">
  <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
  </style>
@@ -18,8 +17,8 @@
   <ul class="navlinks">
    <li><a href="index.html">Home</a></li>
    <li><a href="#ContactUs">Contact Us</a></li>
-   <label class="ui-switch">
-    <input type="checkbox">
+   <label class="ui-switch" >
+    <input type="checkbox" onclick="darkMode()">
     <div class="slider">
      <div class="circle"></div>
     </div>
@@ -33,7 +32,7 @@
  <br>
  <br>
  <div>
-  <a href="genesis.html">Genesis</a>
+  <a href="Genesis/genesis.html">Genesis</a>
   <a href="">Exodus</a>
   <a href="">Leviticus</a>
   <a href="">Numbers</a>
@@ -76,96 +75,121 @@
 </aside>
 
 <aside class="new-testament">
- <span><strong>New Testament</strong></span>
+  <span><strong>New Testament</strong></span>
   <br>
   <br>
- <div>
-   <a href="">Matthew</a>
-   <a href="">Matthew</a>
- </div>
+  <div>
+    <a href="matthew.html">Matthew</a>
+    <a href="Mark">Mark</a>
+    <a href="Luke">Luke</a>
+    <a href="John">John</a>
+    <a href="Acts">Acts</a>
+    <a href="Romans">Romans</a>
+    <a href="1 Corinthians">1 Corinthians</a>
+    <a href="2 Corinthians">2 Corinthians</a>
+    <a href="Galatians">Galatians</a>
+    <a href="Ephesians">Ephesians</a>
+    <a href="Philippians">Philippians</a>
+    <a href="Colossians">Colossians</a>
+    <a href="1 Thessalonians">1 Thessalonians</a>
+    <a href="2 Thessalonians">2 Thessalonians</a>
+    <a href="1 Timothy">1 Timothy</a>
+    <a href="2 Timothy">2 Timothy</a>
+    <a href="Titus">Titus</a>
+    <a href="Philemon">Philemon</a>
+    <a href="Hebrews">Hebrews</a>
+    <a href="James">James</a>
+    <a href="1 Peter">1 Peter</a>
+    <a href="2 Peter">2 Peter</a>
+    <a href="1 John">1 John</a>
+    <a href="2 John">2 John</a>
+    <a href="3 John">3 John</a>
+    <a href="Jude">Jude</a>
+    <a href="Revelation">Revelation</a>
+  </div>
 </aside>
-
-   <!-- REMOVE TEMPORARILY
-    "Old Testament"
+<!--Dropdown-->
+<div class="container">
   <div class="dropdown">
-   <select name="Old Testament" id="oldTestament">
-    <option value="" disabled selected hidden>Old Testament</option>
-    <option value="Genesis">Genesis</option>
-    <option value="Exodus">Exodus</option>
-    <option value="Leviticus">Leviticus</option>
-    <option value="Numbers">Numbers</option>
-    <option value="Deutoronomy">Deutoronomy</option>
-    <option value="Joshua">Joshua</option>
-    <option value="Judges">Judges</option>
-    <option value="Ruth">Ruth</option>
-    <option value="I Samuel">I Samuel</option>
-    <option value="II Samuel">II Samuel</option>
-    <option value="I Kings">I Kings</option>
-    <option value="II Kings">II Kings</option>
-    <option value="I Chronicles">I Chronicles</option>
-    <option value="II Chronicles">II Chronicles</option>
-    <option value="Ezra">Ezra</
-    <optionn>
-    <option value="Nehemiah">Nehemiah</option>
-    <option value="Esther">Esther</option>
-    <option value="Job">Job</option>
-    <option value="Psalms">Psalms</option>
-    <option value="Proverbs">Proverbs</option>
-    <option value="Ecclesiastes">Ecclesiastes</option>
-    <option value="Song of Solomon">Song of Solomon</option>
-    <option value="Isaiah">Isaiah</option>
-    <option value="Jeremiah">Jeremiah</option>
-    <option value="Lamentations">Lamentations</option>
-    <option value="Daniel">Daniel</option>
-    <option value="Hosea">Hosea</option>
-    <option value="Joel">Joel</option>
-    <option value="Amos">Amos</option>
-    <option value="Obadiah">Obadiah</option>
-    <option value="Jonah">Jonah</option>
-    <option value="Micah">Micah</option>
-    <option value="Nahum">Nahum</option>
-    <option value="Habakkuk">Habakkuk</option>
-    <option value="Zhepaniah">Zhepaniah</option>
-    <option value="Haggai">Haggai</option>
-    <option value="Zechariah">Zechariah</option>
-    <option value="Malachi">Malachi</option>
-   </select>
-   "New Testament"
-  <select name="New Testament" id="newTestament">
-    <option value="" disabled selected hidden>New Testament</option>
-    <option value="Matthew">Matthew</option>
-    <option value="Mark">Mark</option>
-    <option value="Luke">Luke</option>
-    <option value="John">John</option>
-    <option value="Acts">Acts</option>
-    <option value="Romans">Romans</option>
-    <option value="I Corinthians">I Corinthians</option>
-    <option value="II Corinthians">II Corinthians</option>
-    <option value="Galatians">Galatians</option>
-    <option value="Ephesians">Ephesians</option>
-    <option value="Philippians">Philippians</option>
-    <option value="Colossians">Colossians</option>
-    <option value="I Thessalonians">I Thessalonians</option>
-    <option value="II Thessalonians">II Thessalonians</option>
-    <option value="I Timothy">I Timothy</option>
-    <option value="II Timothy">II Timothy</option>
-    <option value="Titus">Titus</option>
-    <option value="Philemon">Philemon</option>
-    <option value="Hebrews">Hebrews</option>
-    <option value="James">James</option>
-    <option value="I Peter">I Peter</option>
-    <option value="II Peter">II Peter</option>
-    <option value="I John">I John</option>
-    <option value="II John">II John</option>
-    <option value="III John">III John</option>
-    <option value="Jude">Jude</option>
-    <option value="Revelation of John">Revelation of John</option>
-  </select>
-  </div> 
-  REMOVE TEMPORARILY-->
+    <button>Old Testament</button>
+    <div class="dropdown-options">
+      <a href="genesis.html" title="Book of Genesis">Genesis</a>
+      <a href="exodus.html" title="Book of Exodus">Exodus</a>
+      <a href="leviticus.html" title="Book of Leviticus">Leviticus</a>
+      <a href="">Numbers</a>
+      <a href="">Deuteronomy</a>
+      <a href="">Joshua</a>
+      <a href="">Judges</a>
+      <a href="">Ruth</a>
+      <a href="">1 Samuel</a>
+      <a href="">2 Samuel</a>
+      <a href="">1 Kings</a>
+      <a href="">2 Kings</a>
+      <a href="">1 Chronicles</a>
+      <a href="">2 Chronicles</a>
+      <a href="">Ezra</a>
+      <a href="">Nehemiah</a>
+      <a href="">Esther</a>
+      <a href="">Job</a>
+      <a href="">Psalms</a>
+      <a href="">Proverbs</a>
+      <a href="">Ecclesiastes</a>
+      <a href="">Song of Solomon</a>
+      <a href="">Isaiah</a>
+      <a href="">Jeremiah</a>
+      <a href="">Lamentations</a>
+      <a href="">Ezekiel</a>
+      <a href="">Daniel</a>
+      <a href="">Hosea</a>
+      <a href="">Joel</a>
+      <a href="">Amos</a>
+      <a href="">Obadiah</a>
+      <a href="">Jonah</a>
+      <a href="">Micah</a>
+      <a href="">Nahum</a>
+      <a href="">Habakkuk</a>
+      <a href="">Zephaniah</a>
+      <a href="">Haggai</a>
+      <a href="">Zechariah</a>
+      <a href="">Malachi</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button>New Testament</button>
+    <div class="dropdown-options">
+      <a href="matthew.html">Matthew</a>
+      <a href="Mark">Mark</a>
+      <a href="Luke">Luke</a>
+      <a href="John">John</a>
+      <a href="Acts">Acts</a>
+      <a href="Romans">Romans</a>
+      <a href="1 Corinthians">1 Corinthians</a>
+      <a href="2 Corinthians">2 Corinthians</a>
+      <a href="Galatians">Galatians</a>
+      <a href="Ephesians">Ephesians</a>
+      <a href="Philippians">Philippians</a>
+      <a href="Colossians">Colossians</a>
+      <a href="1 Thessalonians">1 Thessalonians</a>
+      <a href="2 Thessalonians">2 Thessalonians</a>
+      <a href="1 Timothy">1 Timothy</a>
+      <a href="2 Timothy">2 Timothy</a>
+      <a href="Titus">Titus</a>
+      <a href="Philemon">Philemon</a>
+      <a href="Hebrews">Hebrews</a>
+      <a href="James">James</a>
+      <a href="1 Peter">1 Peter</a>
+      <a href="2 Peter">2 Peter</a>
+      <a href="1 John">1 John</a>
+      <a href="2 John">2 John</a>
+      <a href="3 John">3 John</a>
+      <a href="Jude">Jude</a>
+      <a href="Revelation">Revelation</a>
+    </div>
+  </div>
+
+</div>
 
  <script src="script.js"></script>
- <footer>Created in 2023</footer>
 </body>
 
 </html>
